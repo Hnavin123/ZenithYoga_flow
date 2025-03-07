@@ -1,0 +1,27 @@
+.sidebar {
+    width: 200px;
+    height: calc(100vh - 80px); /* Adjust height to avoid overlapping Navbar */
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    position: fixed;
+    left: 0;
+    top: 80px; /* Navbar height */
+    overflow-y: auto; /* Scroll if content is larger than sidebar */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .sidebar ul li:hover {
+    color: #f4a261;
+  }
+  

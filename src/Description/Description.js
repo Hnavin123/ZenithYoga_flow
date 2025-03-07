@@ -3,7 +3,7 @@ import './Description.css';
 
 const Description = () => {
   return (
-    <div className="description-container">
+    <div className="">
       <h1>About Me</h1>
       <p>
       I am a Computer Science Engineer with a passion for exploring cutting-edge technologies and solving complex problems through innovative solutions. My journey revolves around continuous learning and staying updated with the latest trends in web development

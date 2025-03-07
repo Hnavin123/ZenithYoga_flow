@@ -6,17 +6,19 @@ import Project from './Project/Project';
 import { Footer } from './Footer/Footer';
 function App() {
   return (
-    <div>
-      <NavBar />
+    <>
+      <div class="header"><NavBar /></div>
       <div style={{ display: 'flex' }}>
-        <SideBar />
-        <div style={{ marginLeft: '250px', padding: '20px', width: 'calc(100% - 250px)' }}>
+        <div className='main-body'>
+        <div className="menu"><SideBar /></div>
+        <div className='main'>
           <Description />
-          <Project />
-          <Footer />
+        </div>
         </div>
       </div>
-    </div>
+      <div class="footer"><Footer /></div>
+      
+    </>
   );
 }
 

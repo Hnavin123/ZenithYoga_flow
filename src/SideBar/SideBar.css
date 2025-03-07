@@ -1,10 +1,10 @@
 .sidebar {
     width: 200px;
-    height: calc(100vh - 80px); /* Adjust height to avoid overlapping Navbar */
+    height: 100%; /* Adjust height to avoid overlapping Navbar */
     background-color: #333;
     color: white;
     padding: 2rem;
-    position: fixed;
+    /*position: fixed;
     left: 0;
     top: 80px; /* Navbar height */
     overflow-y: auto; /* Scroll if content is larger than sidebar */

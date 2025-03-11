@@ -1,19 +1,13 @@
 import React from 'react';
-import './SideBar.css';
+import './Sidebar';
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Pages</li>
-        <li>Portfolio</li>
-        <li>Projects</li>
-        <li>Activities</li>
-        <li>Achievements</li>
-      </ul>
-    </div>
+    <aside className="sidebar">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </aside>
   );
 };
 

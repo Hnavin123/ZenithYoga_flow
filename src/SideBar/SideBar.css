@@ -1,27 +1,19 @@
 .sidebar {
-    width: 200px;
-    height: calc(100vh - 80px); /* Adjust height to avoid overlapping Navbar */
-    background-color: #333;
-    color: white;
-    padding: 2rem;
-    position: fixed;
-    left: 0;
-    top: 80px; /* Navbar height */
-    overflow-y: auto; /* Scroll if content is larger than sidebar */
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .sidebar ul li:hover {
-    color: #f4a261;
-  }
-  
+  background-color: lightblue;
+  padding: 20px;
+  width: 20%;
+  border-right: 5px solid blue;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}

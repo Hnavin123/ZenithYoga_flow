@@ -1,23 +1,42 @@
+// import React from 'react';
+// import Header from './Header/Header';
+// import Sidebar from './Sidebar/Sidebar';
+// import Description from './Description/Description';
+// import Footer from './Footer/Footer';
+
+// const App = () => {
+//   return (
+//     <div className="container">
+//       <Header />
+//       <div className="main-content">
+//         <Sidebar />
+//         <Description />
+//       </div>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default App;
+
 import React from 'react';
-import NavBar from './NavBar/Navbar';
-import SideBar from './SideBar/SideBar';
+import Header from './Header/Header';
+import Sidebar from './Sidebar/Sidebar';
 import Description from './Description/Description';
-import Project from './Project/Project';
-import { Footer } from './Footer/Footer';
-function App() {
+import Footer from './Footer/Footer';
+import './App.css';
+
+const App = () => {
   return (
-    <div>
-      <NavBar />
-      <div style={{ display: 'flex' }}>
-        <SideBar />
-        <div style={{ marginLeft: '250px', padding: '20px', width: 'calc(100% - 250px)' }}>
-          <Description />
-          <Project />
-          <Footer />
-        </div>
+    <div className="container">
+      <Header />
+      <div className="main-content">
+        <Sidebar />
+        <Description />
       </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

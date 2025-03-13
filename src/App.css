@@ -20,3 +20,7 @@
 .footer {
   border-top: 5px solid blue;
 }
+
+.main-body {
+  display: grid;
+}

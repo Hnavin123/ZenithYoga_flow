@@ -28,14 +28,19 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="container">
-      <Header />
-      <div className="main-content">
-        <Sidebar />
-        <Description />
+    <>
+      <div class="header"><NavBar /></div>
+      <div style={{ display: 'flex' }}>
+        <div className='main-body'>
+        <div className="menu"><SideBar /></div>
+        <div className='main'>
+          <Description />
+        </div>
+        </div>
       </div>
-      <Footer />
-    </div>
+      <div class="footer"><Footer /></div>
+      
+    </>
   );
 };
 

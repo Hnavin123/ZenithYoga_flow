@@ -1,0 +1,20 @@
+.who-we-are-container {
+    margin-left: 120px; /* Adjust to align beside sidebar */
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .who-we-are-container h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .who-we-are-container p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
+  }
+  

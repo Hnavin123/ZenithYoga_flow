@@ -20,16 +20,16 @@
 // export default App;
 
 import React from 'react';
-import Header from './Header/Header';
-import Sidebar from './Sidebar/Sidebar';
+import SideBar from './SideBar/SideBar';
 import Description from './Description/Description';
 import Footer from './Footer/Footer';
 import './App.css';
+import Header from './Header/Header';
 
 const App = () => {
   return (
     <>
-      <div class="header"><NavBar /></div>
+      <div class="header"><Header /></div>
       <div style={{ display: 'flex' }}>
         <div className='main-body'>
         <div className="menu"><SideBar /></div>

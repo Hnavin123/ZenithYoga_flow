@@ -1,8 +1,25 @@
 .footer {
-  background-color: lightblue;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full-width */
+  background-color: #666; /* Lighter than previous */
+  color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 20px;
+  padding: 15px 0;
+  font-size: 16px;
   font-weight: bold;
-  border: 5px solid blue;
+}
+
+/* Ensure there is space before footer */
+.footer-space {
+  height: 50px; /* Creates gap before footer */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+    padding: 10px 0;
+  }
 }

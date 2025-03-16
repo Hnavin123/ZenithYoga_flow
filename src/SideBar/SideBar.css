@@ -1,27 +1,41 @@
+/* Sidebar Styling */
 .sidebar {
-    width: 200px;
-    height: 100%; /* Adjust height to avoid overlapping Navbar */
-    background-color: #333;
-    color: white;
-    padding: 2rem;
-    /*position: fixed;
-    left: 0;
-    top: 80px; /* Navbar height */
-    overflow-y: auto; /* Scroll if content is larger than sidebar */
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    margin-bottom: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .sidebar ul li:hover {
-    color: #f4a261;
-  }
-  
+  width: 100px !important; /* Force reduced width */
+  min-width: 100px; /* Prevent expansion */
+  max-width: 100px; /* Keep it fixed */
+  height: calc(100vh - 80px); /* Adjust height after header */
+  background-color: #f4f4f4; /* Light background */
+  padding: 5px; /* Adjusted padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items */
+  gap: 10px; /* Space between links */
+  position: fixed;
+  top: 80px; /* Start just below the header */
+  left: 0;
+  overflow-y: auto; /* Enables scrolling if content overflows */
+  border-right: 2px solid #ccc; /* Subtle border on the right */
+  box-sizing: border-box; /* Prevents unintended width expansion */
+}
+
+/* Sidebar Links */
+.sidebar a {
+  text-decoration: none;
+  color: #222; /* Dark text for contrast */
+  font-size: 12px; /* Smaller font size */
+  font-weight: bold;
+  padding: 6px 3px; /* Adjusted padding */
+  display: block;
+  text-align: center; /* Center text */
+  width: 100%; /* Ensure text aligns within sidebar */
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 5px; /* Rounded corners */
+  word-wrap: break-word; /* Ensure text breaks if too long */
+  overflow: hidden; /* Prevent text from overflowing */
+}
+
+/* Hover Effect */
+.sidebar a:hover {
+  background-color: #ddd; /* Light gray hover effect */
+  color: #000;
+}

@@ -1,14 +1,18 @@
 import React from 'react';
-import './Sidebar';
+import './SideBar.css';
 
-const Sidebar = () => {
+const SideBar = () => {
   return (
     <aside className="sidebar">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#testimonials">Our Testimonials</a>
+      <a href="#offers">Offers</a>
+      <a href="#features">Features</a>
+      <a href="#equipments">Equipments</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#dieticians">Meet Expert Dieticians</a>
+      <a href="#challenges">90 Days Challenges</a>
     </aside>
   );
 };
 
-export default Sidebar;
+export default SideBar;

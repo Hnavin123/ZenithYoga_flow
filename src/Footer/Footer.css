@@ -1,25 +1,99 @@
+/* Footer Container */
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Full-width */
-  background-color: #666; /* Lighter than previous */
-  color: white;
+  background: #2c3e50; /* Deep blue-gray for a calming effect */
+  color: #ecf0f1; /* Light text for contrast */
+  padding: 40px 0;
   text-align: center;
-  padding: 15px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Footer Content Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer Sections */
+.footer-logo, .footer-links, .footer-contact, .footer-social {
+  flex: 1;
+  margin: 15px;
+  min-width: 250px;
+}
+
+/* Footer Logo */
+.footer-logo h2 {
+  font-size: 28px;
+  color: #f1c40f; /* Golden yellow for a premium feel */
+}
+
+.footer-logo p {
+  font-style: italic;
   font-size: 16px;
-  font-weight: bold;
+  opacity: 0.8;
 }
 
-/* Ensure there is space before footer */
-.footer-space {
-  height: 50px; /* Creates gap before footer */
+/* Footer Links */
+.footer-links h3, 
+.footer-contact h3, 
+.footer-social h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #f1c40f;
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-  .footer {
-    font-size: 14px;
-    padding: 10px 0;
-  }
+/* Links Styling */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #f1c40f;
+}
+
+/* Contact Info */
+.footer-contact p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Social Media Links */
+.footer-social a {
+  display: block;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 18px;
+  margin: 5px 0;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #f1c40f;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #7f8c8d;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  opacity: 0.7;
 }

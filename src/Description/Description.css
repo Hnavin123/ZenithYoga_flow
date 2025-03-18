@@ -12,28 +12,53 @@
   line-height: 1.6;
 }
 
+/* Yoga Images */
+.yoga-image {
+  display: block;
+  width: 80%; /* Adjusted for better page fitting */
+  max-width: 700px; /* Ensures it doesn't stretch too much */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px auto; /* Centers the image */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
 .description-container h1, 
 .description-container h2, 
 .description-container h3 {
-  color: #d9534f; /* A strong red for headings */
+  color: #2c786c; /* Calm green shade */
   text-align: center;
 }
 
+/* List Styling */
 .description-container ul {
   list-style-type: none;
   padding: 0;
 }
 
 .description-container ul li {
-  background: #f8f9fa;
-  padding: 10px;
+  background: #e8f5e9; /* Soft green background */
+  padding: 12px;
   margin: 10px 0;
   border-radius: 5px;
   font-weight: bold;
+  text-align: center;
 }
 
+/* Paragraph Styling */
 .description-container p {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+}
+
+/* Add spacing between elements */
+.description-container h1, 
+.description-container h2, 
+.description-container h3, 
+.description-container p, 
+.description-container ul {
+  margin-bottom: 20px;
 }

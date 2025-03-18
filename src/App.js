@@ -20,26 +20,25 @@
 // export default App;
 
 import React from 'react';
-import SideBar from './SideBar/SideBar';
 import Description from './Description/Description';
 import Footer from './Footer/Footer';
 import './App.css';
 import Header from './Header/Header';
+import SideBar from './SideBar/SideBar';
+import Rout from './Routing/Routing';
 
 const App = () => {
   return (
     <>
+    
       <div class="header"><Header /></div>
       <div style={{ display: 'flex' }}>
         <div className='main-body'>
-        <div className="menu"><SideBar /></div>
-        <div className='main'>
-          <Description />
-        </div>
+          <div className="menu"><SideBar /></div>
+          <div className='main'><Rout /></div>
         </div>
       </div>
       <div class="footer"><Footer /></div>
-      
     </>
   );
 };

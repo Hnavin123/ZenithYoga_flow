@@ -1,5 +1,4 @@
 import React from 'react';
-import './Whoweare.css'; // Import CSS for styling
 
 const WhoWeAre = () => {
   return (

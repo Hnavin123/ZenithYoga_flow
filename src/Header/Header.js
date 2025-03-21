@@ -1,8 +1,14 @@
 import React from 'react';
 import './Header.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
+const navigate = useNavigate();
+const addmissionHandler = () => {
+  navigate('/admission-form');
+}
+
   return (
     <header className="header">
       <nav className="nav">
@@ -13,7 +19,7 @@ const Header = () => {
           <li><a href="membership">Membership</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
-        <button className="join-btn">Join Now</button>
+        <button className="join-btn" onClick={addmissionHandler}>Join Now</button>
       </nav>
     </header>
   );

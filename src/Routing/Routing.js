@@ -7,6 +7,8 @@ import Home from "../Header/Home/Home";
 import Classes from "../Header/Classes/Classes";
 import Testimonials from "../SideBar/Sidebarcontent/Testimonials";
 import OfferDetails from "../SideBar/Sidebarcontent/Offers";
+import Features from "../SideBar/Sidebarcontent/Features";
+import Admission from "../AdmissionForm/Admission";
 
 const Rout = () => {
     return(
@@ -19,6 +21,8 @@ const Rout = () => {
                     <Route path="home" element={<Home /> } />
                     <Route path="offers" element={<OfferDetails /> } />
                     <Route path="testimonials" element={<Testimonials /> } />
+                    <Route path="features" element={<Features />} />
+                    <Route path="admission-form" element={<Admission />} />
                 </Routes>
         </>
     );

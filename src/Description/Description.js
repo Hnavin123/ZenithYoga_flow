@@ -4,13 +4,6 @@ import './Description.css';
 const Description = () => {
   return (
     <div className="description-container">
-      {/* Yoga Image at the Top */}
-      <img 
-        src="https://source.unsplash.com/800x400/?yoga,meditation" 
-        alt="Yoga Practice" 
-        className="yoga-image"
-      />
-
       <h1>🧘 Welcome to Serenity Yoga – Find Your Inner Peace</h1>
       <p>
         At <strong>Serenity Yoga</strong>, we believe in the power of yoga to transform the mind, body, and soul. 

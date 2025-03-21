@@ -1,6 +1,6 @@
 /* Description Section */
 .description-container {
-  margin-top: 80px; /* Ensures it starts below the header */
+  margin-top: 20px; /* Ensures it starts below the header */
   margin-left: 250px; /* Ensures it starts after the sidebar */
   padding: 40px;
   max-width: calc(100% - 250px); /* Adjusts width dynamically */
@@ -10,6 +10,8 @@
   color: #333;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
 /* Yoga Images */

@@ -1,11 +1,9 @@
- .home-container {
-    /* margin-left: 200px; Adjust for sidebar width */
-    /* padding: 50px; */
+ /* .home-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertical center */
-    align-items: center; /* Horizontal center */
-    width: calc(100vw + 150px); /* Adjust to fit the screen minus the header */
+    justify-content: center; 
+    align-items: center;
+    width: calc(100vw + 150px);
     text-align: center;
   }
   
@@ -19,6 +17,6 @@
     font-size: 18px;
     color: #666;
     max-width: 600px;
-    margin: 20px 0; /* Add some spacing */
+    margin: 20px 0; 
   }
-  
+   */

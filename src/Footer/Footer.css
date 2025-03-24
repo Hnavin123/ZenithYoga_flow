@@ -1,13 +1,13 @@
-/* Footer Container */
+/* 
 .footer {
-  background: #2c3e50; /* Deep blue-gray for a calming effect */
-  color: #ecf0f1; /* Light text for contrast */
+  background: #2c3e50; 
+  color: #ecf0f1; 
   padding: 40px 0;
   text-align: center;
   font-family: 'Arial', sans-serif;
 }
 
-/* Footer Content Layout */
+
 .footer-container {
   display: flex;
   justify-content: space-around;
@@ -17,17 +17,17 @@
   padding: 20px;
 }
 
-/* Footer Sections */
+
 .footer-logo, .footer-links, .footer-contact, .footer-social {
   flex: 1;
   margin: 15px;
   min-width: 250px;
 }
 
-/* Footer Logo */
+
 .footer-logo h2 {
   font-size: 28px;
-  color: #f1c40f; /* Golden yellow for a premium feel */
+  color: #f1c40f; 
 }
 
 .footer-logo p {
@@ -36,7 +36,7 @@
   opacity: 0.8;
 }
 
-/* Footer Links */
+
 .footer-links h3, 
 .footer-contact h3, 
 .footer-social h3 {
@@ -45,7 +45,7 @@
   color: #f1c40f;
 }
 
-/* Links Styling */
+
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -66,13 +66,13 @@
   color: #f1c40f;
 }
 
-/* Contact Info */
+
 .footer-contact p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* Social Media Links */
+
 .footer-social a {
   display: block;
   text-decoration: none;
@@ -86,7 +86,6 @@
   color: #f1c40f;
 }
 
-/* Footer Bottom */
 .footer-bottom {
   margin-top: 30px;
   padding-top: 15px;
@@ -96,4 +95,4 @@
 .footer-bottom p {
   font-size: 14px;
   opacity: 0.7;
-}
+} */

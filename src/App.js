@@ -33,12 +33,15 @@ const App = () => {
     
       <div class="header"><Header /></div>
       <div style={{ display: 'flex' }}>
-        <div className='main-body'>
-          <div className="menu"><SideBar /></div>
-          <div className='main'><Rout /></div>
+        {/* <div className='main-body'> */}
+        <div className="sideBar"><SideBar /></div>
+        <div className='main-content'>
+          <div><Rout /></div>
+          <div class="footer"><Footer /></div>
         </div>
+      {/* </div> */}
       </div>
-      <div class="footer"><Footer /></div>
+      
     </>
   );
 };

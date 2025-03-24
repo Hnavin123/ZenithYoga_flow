@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -9,8 +9,8 @@
   flex-grow: 1;
 }
 .main-content {
-  margin-left: 120px; /* Adjust for sidebar width */
-  padding-bottom: 80px; /* Adds space between description & footer */
+  margin-left: 120px; 
+  padding-bottom: 80px; 
 }
 
 
@@ -28,4 +28,62 @@
 
 .main-body {
   display: grid;
+} */
+.body{
+  box-sizing: border-box;
+  margin:0px;
+}
+
+.header {
+  background-color: indigo; 
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px; 
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+.sideBar {
+  display: flex;
+  /* flex: 3; */
+  flex-direction: column; 
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 150px; 
+  height: calc(100vh - 80px); 
+  background: linear-gradient(to bottom, #e0f7fa, #80deea); 
+  padding: 10px;
+  gap: 12px; 
+}
+
+.main-content{
+  position: fixed;
+  top: 80px; 
+  margin-left: 170px;
+  height: calc(100vh - 200px);
+  width: calc(100vw - 170px);
+  /* padding: 20px;  */
+  background-color: bisque;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+.footer{
+  position: fixed;
+  /* margin-left: 150px;  */
+  /* margin-top: calc(100vh - 120px); */
+  bottom:0;
+  left: 170px;
+  height:120px;
+  width: calc(100vw - 170px);
+  /* padding: 10px;  */
+  background-color: aqua;
+
 }

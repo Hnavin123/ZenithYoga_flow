@@ -1,17 +1,18 @@
 /* Description Section */
 .description-container {
-  margin-top: 20px; /* Ensures it starts below the header */
-  margin-left: 250px; /* Ensures it starts after the sidebar */
+  margin-top: 0px; /* Ensures it starts below the header */
+  margin-left: 0px; /* Ensures it starts after the sidebar */
   padding: 40px;
-  max-width: calc(100% - 250px); /* Adjusts width dynamically */
+  max-width: calc(100% - 80px); /* Adjusts width dynamically */
   background: #fff;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   color: #333;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   position: relative;
   z-index: 1;
+  scroll-behavior: smooth;
 }
 
 /* Yoga Images */

@@ -1,84 +1,49 @@
-/* 
-.sidebar {
-  width: 120px; 
-  min-width: 120px;
-  max-width: 120px;
-  height: calc(100vh - 80px); 
-  background: linear-gradient(to bottom, #e0f7fa, #80deea); 
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  position: fixed;
-  top: 80px;
-  left: 0;
-  overflow-y: auto;
-  border-right: 2px solid #ccc;
-  box-sizing: border-box;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); 
-} */
 
-/* .sidebar {
-  position: fixed;
-  top: 125px; 
-  left: 0;
-  width: 200px;
-  height: calc(100vh - 80px); 
-  overflow-y: auto;
-} */
-aside{
+/* aside{
+  display: flex;
+  height: 100vh;
+}
+.sideBar{
+  flex: 5;
   top: 120px;
-  display: flex;
   flex-direction: column;
   position: fixed;
-
   width: 150px; 
-  /* min-width: 120px;
-  max-width: 120px; */
   height: calc(100vh - 80px); 
   background: linear-gradient(to bottom, #e0f7fa, #80deea); 
   padding: 10px;
-  /* align-items: center; */
   gap: 12px;
   top: 120px;
   left: 0;
-  /* overflow-y: auto; */
-  /* border-right: 2px solid #ccc; */
-  /* box-sizing: border-box;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);  */
-}
-
-
-/* .sidebar a {
-  text-decoration: none;
-  color: #004d40; 
-  font-size: 13px;
-  font-weight: bold;
-  padding: 8px;
-  width: 100%;
-  text-align: center;
-  border-radius: 20px; 
-  background-color: rgba(255, 255, 255, 0.8); 
-  transition: all 0.3s ease;
-}
-
-
-.sidebar a:hover {
-  background-color: #26a69a; 
-  color: #fff; 
-  transform: scale(1.05); 
-}
-
-@media screen and (max-width: 600px) {
-  .sidebar {
-    width: 100px;
-    min-width: 100px;
-    max-width: 100px;
-  }
-  
-  .sidebar a {
-    font-size: 11px;
-    padding: 6px;
-  }
 } */
+
+/* .sideBar {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  width: 150px; 
+  height: calc(100vh - 120px); 
+  background: linear-gradient(to bottom, #e0f7fa, #80deea); 
+  padding: 10px;
+  gap: 12px;
+} */
+.sideBar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sideBar a {
+  text-decoration: none;
+  color: #007b8f;
+  font-size: 14px;
+  padding: 8px;
+  transition: color 0.3s;
+}
+
+.sideBar a:hover {
+  color: #004d61;
+}
+

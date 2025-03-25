@@ -1,0 +1,46 @@
+.dieticians {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  .dieticians h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .dieticians p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .dietician-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .dietician-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .dietician-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .dietician-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+  }
+  
+  .dietician-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

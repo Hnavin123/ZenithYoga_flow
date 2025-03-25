@@ -5,8 +5,12 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
 const navigate = useNavigate();
+
 const addmissionHandler = () => {
-  navigate('/admission-form');
+  console.log("Form openiing");
+  setTimeout(() => {
+    navigate('/admission-form');
+  },1000)
 }
 
   return (

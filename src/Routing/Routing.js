@@ -11,6 +11,7 @@ import Features from "../SideBar/Sidebarcontent/Features";
 import Admission from "../AdmissionForm/Admission";
 import Equipments from "../SideBar/Sidebarcontent/Equipments";
 import Trainers from "../SideBar/Sidebarcontent/Trainers";
+import Dieticians from "../SideBar/Sidebarcontent/Dietecians";
 
 const Rout = () => {
     return(
@@ -27,6 +28,7 @@ const Rout = () => {
                     <Route path="admission-form" element={<Admission />} />
                     <Route path="equipments" element={<Equipments />} />
                     <Route path="trainers" element={<Trainers />} />
+                    <Route path="expertdietcians" element={<Dieticians/>} />
                 </Routes>
         </>
     );

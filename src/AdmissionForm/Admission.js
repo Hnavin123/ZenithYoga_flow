@@ -18,7 +18,7 @@ const Admission = () => {
   return (
     <div className='admission-container'>
       <div>
-          <h2>Gym Admission Form</h2>
+          <h2> Admission Form</h2>
           <form>
             <label>
               Name: <input type="text" name="name" />

@@ -9,6 +9,8 @@ import Testimonials from "../SideBar/Sidebarcontent/Testimonials";
 import OfferDetails from "../SideBar/Sidebarcontent/Offers";
 import Features from "../SideBar/Sidebarcontent/Features";
 import Admission from "../AdmissionForm/Admission";
+import Equipments from "../SideBar/Sidebarcontent/Equipments";
+import Trainers from "../SideBar/Sidebarcontent/Trainers";
 
 const Rout = () => {
     return(
@@ -23,6 +25,8 @@ const Rout = () => {
                     <Route path="testimonials" element={<Testimonials /> } />
                     <Route path="features" element={<Features />} />
                     <Route path="admission-form" element={<Admission />} />
+                    <Route path="equipments" element={<Equipments />} />
+                    <Route path="trainers" element={<Trainers />} />
                 </Routes>
         </>
     );

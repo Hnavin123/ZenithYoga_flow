@@ -85,5 +85,8 @@
   width: calc(100vw - 170px);
   /* padding: 10px;  */
   background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 
 }

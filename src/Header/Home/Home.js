@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'; // Import CSS for styling
+import Footer from '../../Footer/Footer';
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
       <p>🌟 <strong>Sign up now for a FREE trial class!</strong> Start your journey toward a healthier and more mindful life.</p>
 
       <h3>🙏 Discover the true essence of yoga. Let’s begin the journey together! 🕉️</h3>
+      {/* <Footer /> */}
     </div>
 
   );

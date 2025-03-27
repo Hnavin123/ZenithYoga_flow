@@ -4,6 +4,7 @@ import Description from "../Description/Description";
 import Membership from "../Header/Membership/Membership";
 import WhoWeAre from "../Header/Whoweare/Whoweare";
 import Home from "../Header/Home/Home";
+
 import Classes from "../Header/Classes/Classes";
 import Testimonials from "../SideBar/Sidebarcontent/Testimonials";
 import OfferDetails from "../SideBar/Sidebarcontent/Offers";
@@ -12,6 +13,7 @@ import Admission from "../AdmissionForm/Admission";
 import Equipments from "../SideBar/Sidebarcontent/Equipments";
 import Trainers from "../SideBar/Sidebarcontent/Trainers";
 import Dieticians from "../SideBar/Sidebarcontent/Dietecians";
+import Contact from "../Header/Contact/Contact";
 
 const Rout = () => {
     return(
@@ -22,6 +24,7 @@ const Rout = () => {
                     <Route path="classes" element={<Classes /> } />
                     <Route path="about" element={<WhoWeAre /> } />
                     <Route path="home" element={<Home /> } />
+                    <Route path="contact" element={<Contact /> } />
                     <Route path="offers" element={<OfferDetails /> } />
                     <Route path="testimonials" element={<Testimonials /> } />
                     <Route path="features" element={<Features />} />

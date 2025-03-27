@@ -18,10 +18,10 @@ const addmissionHandler = () => {
       <nav className="nav">
         <ul className="nav-links">
           <li><Link to="home">Home</Link></li>
-          <li><a href="about">Who We Are</a></li>
-          <li><a href="classes">Classes</a></li>
-          <li><a href="membership">Membership</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><Link to="about">Who we are</Link></li>
+          <li><Link to="classes">Classes</Link></li>
+          <li><Link to="membership">Membership</Link></li>
+          <li><Link to="contact">Contact</Link></li>
         </ul>
         <button className="join-btn" onClick={addmissionHandler}>Join Now</button>
       </nav>

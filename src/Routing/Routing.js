@@ -18,25 +18,25 @@ import Contact from "../Header/Contact/Contact";
 import NinetyDaysChallenge from "../SideBar/Sidebarcontent/NinetyDaysChallenge";
 
 const Rout = () => {
-    return(
-        <>
-                <Routes>
-                    <Route path="/" element={<Description /> } />
-                    <Route path="membership" element={<Membership /> } />
-                    <Route path="classes" element={<Classes /> } />
-                    <Route path="about" element={<WhoWeAre /> } />
-                    <Route path="home" element={<Home /> } />
-                    <Route path="contact" element={<Contact /> } />
-                    <Route path="offers" element={<OfferDetails /> } />
-                    <Route path="testimonials" element={<Testimonials /> } />
-                    <Route path="features" element={<Features />} />
-                    <Route path="admission-form" element={<Admission />} />
-                    <Route path="equipments" element={<Equipments />} />
-                    <Route path="trainers" element={<Trainers />} />
-                    <Route path="expertdietcians" element={<Dieticians/>} />
-                    <Route path="challenges" element={<NinetyDaysChallenge />} />
-                </Routes>
-        </>
-    );
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Description />} />
+        <Route path="membership" element={<Membership />} />
+        <Route path="classes" element={<Classes />} />
+        <Route path="about" element={<WhoWeAre />} />
+        <Route path="home" element={<Home />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="offers" element={<OfferDetails />} />
+        <Route path="testimonials" element={<Testimonials />} />
+        <Route path="features" element={<Features />} />
+        <Route path="admission-form" element={<Admission />} />
+        <Route path="equipments" element={<Equipments />} />
+        <Route path="trainers" element={<Trainers />} />
+        <Route path="expertdietcians" element={<Dieticians />} />
+        <Route path="challenges" element={<NinetyDaysChallenge />} />
+      </Routes>
+    </>
+  );
 };
 export default Rout;

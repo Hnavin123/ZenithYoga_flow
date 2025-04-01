@@ -117,7 +117,7 @@ import DanceFunClasses from "./DanceFunClasses";
 import "./Classes.css";
 
 const Classes = () => {
-  const [activeComponent, setActiveComponent] = useState(null);
+  const [activeComponent, setActiveComponent] = useState("yoga");
 
   return (
     <div className="classes-container">

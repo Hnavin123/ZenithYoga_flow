@@ -119,6 +119,18 @@ import "./Classes.css";
 const Classes = () => {
   const [activeComponent, setActiveComponent] = useState("yoga");
 
+  const[value,setValue] = useState(0);
+  const Increment = () =>{
+    if(value<20){
+      setValue(value+1);
+    }
+  }
+  const Decrement = () => {
+    if(value>0){
+      setValue(value-1);
+    }
+  }
+
   return (
     <div className="classes-container">
       <h1>🧘 Our Yoga & Fitness Classes</h1>
@@ -150,6 +162,13 @@ const Classes = () => {
         {activeComponent === "cardio" && <CardioStrengthClasses />}
         {activeComponent === "dance" && <DanceFunClasses />}
       </div>
+
+      <div className="counter-container">
+        <button onClick={Increment}>+</button>
+        <button onClick={Decrement}>-</button>
+        <button>{value}</button>
+      </div>
+      
     </div>
   );
 };

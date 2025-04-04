@@ -1,5 +1,5 @@
-import React from 'react';
-import './Membership.css'; // Import CSS for styling
+import React, { useState } from "react";
+import "./Membership.css"; // Import CSS for styling
 
 const Membership = () => {
   return (
@@ -7,7 +7,7 @@ const Membership = () => {
       <div>
         <h1>Membership Plans</h1>
         <p>Choose the best membership plan that suits your fitness goals.</p>
-        
+
         <div className="membership-plans">
           <div className="plan">
             <h2>Basic Plan</h2>

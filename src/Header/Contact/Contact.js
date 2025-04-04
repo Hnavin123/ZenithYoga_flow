@@ -1,5 +1,5 @@
-
 import React from "react";
+import { useState } from "react";
 import "./Contact.css";
 
 const Contact = () => {
@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="contact-container">
       <h2>📞 Contact Us</h2>
       <p>Have questions or need assistance? Get in touch with us!</p>
-      
+
       <form className="contact-form">
         <label>Name:</label>
         <input type="text" placeholder="Enter your name" required />
@@ -16,7 +16,11 @@ const Contact = () => {
         <input type="email" placeholder="Enter your email" required />
 
         <label>Message:</label>
-        <textarea rows="4" placeholder="Write your message here..." required></textarea>
+        <textarea
+          rows="4"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
 
         <button type="submit">Send Message</button>
       </form>

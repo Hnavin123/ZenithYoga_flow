@@ -5,10 +5,10 @@ import Footer from "../../Footer/Footer";
 const Home = () => {
   const [value, setValue] = useState(0);
 
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   function api() {
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
+    fetch("https://jsonplaceholder.typicode.com/todos")
       .then((response) => response.json())
       .then((json) => setData(json));
   }
@@ -60,9 +60,9 @@ const Home = () => {
       />
 
       <h2>🌟 Benefits of Yoga</h2>
-      <h3>
+      {/* <h3>
         {data.title},{data.id}
-      </h3>
+      </h3> */}
       <ul className="yoga-benefits">
         <li>
           💆 Reduces Stress & Anxiety – Calms the mind and promotes relaxation.
@@ -88,7 +88,6 @@ const Home = () => {
       </ul>
 
       <h2>🌿 Why Choose Serenity Yoga?</h2>
-      <h3>{data.userId}</h3>
       <ul>
         <li>
           <strong>🌞 Morning & Evening Sessions</strong> – Flexible timings to
@@ -143,6 +142,22 @@ const Home = () => {
         🕉️
       </h3>
       {/* <Footer /> */}
+
+      <div>
+      <h2>All API call </h2>
+      <ul>
+        {data.map((item) => (
+          <li key={item.id} style={{ marginBottom: "10px" }}>
+            <div>User ID: {item.userId}</div>
+            <div>ID:{item.id}</div>
+            <div>Title: {item.title}</div>
+            <div>Completed:{item.completed ? "Yes" : "No"}</div>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+
     </div>
   );
 };

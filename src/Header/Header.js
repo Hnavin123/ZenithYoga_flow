@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link, useNavigate } from 'react-router-dom';
-
+import CartButton from './Cart/Cart';
 
 const Header = () => {
 const navigate = useNavigate();
@@ -22,6 +22,7 @@ const addmissionHandler = () => {
           <li><Link to="classes">Classes</Link></li>
           <li><Link to="membership">Membership</Link></li>
           <li><Link to="contact">Contact</Link></li>
+          <li><Link to="cart"><CartButton/></Link></li>
         </ul>
         <button className="join-btn" onClick={addmissionHandler}>Join Now</button>
       </nav>

@@ -17,7 +17,7 @@
 /* Navigation Bar */
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 90%;
   max-width: 1200px;
@@ -32,6 +32,7 @@
   padding: 0;
   flex-grow: 1; /* Allows menu items to take space */
   justify-content: center; /* Center the links */
+  align-items: center;
 }
 
 /* Styling Each Navigation Item */

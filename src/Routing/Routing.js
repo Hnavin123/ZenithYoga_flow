@@ -4,6 +4,7 @@ import Description from "../Description/Description";
 import Membership from "../Header/Membership/Membership";
 import WhoWeAre from "../Header/Whoweare/Whoweare";
 import Home from "../Header/Home/Home";
+import Cart from "../Header/Cart/Cart";
 
 import Classes from "../Header/Classes/Classes";
 import Testimonials from "../SideBar/Sidebarcontent/Testimonials";
@@ -26,6 +27,8 @@ const Rout = () => {
         <Route path="classes" element={<Classes />} />
         <Route path="about" element={<WhoWeAre />} />
         <Route path="home" element={<Home />} />
+        <Route path="cart" element={<Cart />} />
+
         <Route path="contact" element={<Contact />} />
         <Route path="offers" element={<OfferDetails />} />
         <Route path="testimonials" element={<Testimonials />} />

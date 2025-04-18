@@ -152,6 +152,7 @@ const Home = () => {
             <div>ID:{item.id}</div>
             <div>Title: {item.title}</div>
             <div>Completed:{item.completed ? "Yes" : "No"}</div>
+            <button>+</button>
           </li>
         ))}
       </ul>

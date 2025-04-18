@@ -7,6 +7,15 @@ const Home = () => {
 
   const [data, setData] = useState([]);
 
+  const [cart, setCart] = useState([]);
+  function cartHandler(item) {
+    return () => {
+      
+      setCart(item);
+      
+    };
+  }
+
   function api() {
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((response) => response.json())
@@ -143,7 +152,7 @@ const Home = () => {
       </h3>
       {/* <Footer /> */}
 
-      <div>
+    <div>
       <h2>All API call </h2>
       <ul>
         {data.map((item) => (
@@ -152,7 +161,7 @@ const Home = () => {
             <div>ID:{item.id}</div>
             <div>Title: {item.title}</div>
             <div>Completed:{item.completed ? "Yes" : "No"}</div>
-            <button>+</button>
+            <button onClick={cartHandler(item)}> Add to cart</button> 
           </li>
         ))}
       </ul>

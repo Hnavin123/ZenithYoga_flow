@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link, useNavigate } from 'react-router-dom';
-import CartButton from './Cart/Cart';
+import CartButton from './Cart/CartButton';
 
 const Header = () => {
 const navigate = useNavigate();

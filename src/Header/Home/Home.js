@@ -2,23 +2,25 @@ import { useState, useEffect } from "react";
 import "./Home.css"; // Import CSS for styling
 import Footer from "../../Footer/Footer";
 
-
 const Home = () => {
   const [value, setValue] = useState(0);
 
   const [data, setData] = useState([]);
 
-  const[count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
 
-  function CartIncrement() {
-    
-      
-      setCount(count + 1);
-      
-    
-  }
+  const [cartValue, setCartValue] = useState(0);
+
+  // function CartIncrement() {
+
+  //     setCount(count + 1);
+  // }
+
+  // function CartIncrease() {
+  //   setCount(count + 1);
+  // }
 
   function api() {
     fetch("https://jsonplaceholder.typicode.com/todos")
@@ -40,11 +42,19 @@ const Home = () => {
       setValue(value - 1);
     }
   };
+
+  const CartIncrease = () => {
+    setCartValue(cartValue + 1);
+  };
+
   return (
     <div className="description-container">
       <button onClick={Increment}>+</button>
       <button onClick={Decrement}>-</button>
+
       <button>{value}</button>
+
+      <button>{cartValue}</button>
 
       <h1>🧘 Welcome to Serenity Yoga – Find Your Inner Peace</h1>
       <p>
@@ -156,22 +166,20 @@ const Home = () => {
       </h3>
       {/* <Footer /> */}
 
-    <div>
-      <h2>All API call </h2>
-      <ul>
-        {data.map((item) => (
-          <li key={item.id} style={{ marginBottom: "10px" }}>
-            <div>User ID: {item.userId}</div>
-            <div>ID:{item.id}</div>
-            <div>Title: {item.title}</div>
-            <div>Completed:{item.completed ? "Yes" : "No"}</div>
-            <button onClick={CartIncrement}> Add to cart</button> 
-          </li>
-        ))}
-      </ul>
-    </div>
-
-
+      <div>
+        <h2>All API call </h2>
+        <ul>
+          {data.map((item) => (
+            <li key={item.id} style={{ marginBottom: "10px" }}>
+              <div>User ID: {item.userId}</div>
+              <div>ID:{item.id}</div>
+              <div>Title: {item.title}</div>
+              <div>Completed:{item.completed ? "Yes" : "No"}</div>
+              <button onClick={CartIncrease}> Add to cart</button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

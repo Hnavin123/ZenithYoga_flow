@@ -2,18 +2,22 @@ import { useState, useEffect } from "react";
 import "./Home.css"; // Import CSS for styling
 import Footer from "../../Footer/Footer";
 
+
 const Home = () => {
   const [value, setValue] = useState(0);
 
   const [data, setData] = useState([]);
 
+  const[count, setCount] = useState(0);
+
   const [cart, setCart] = useState([]);
-  function cartHandler(item) {
-    return () => {
+
+  function CartIncrement() {
+    
       
-      setCart(item);
+      setCount(count + 1);
       
-    };
+    
   }
 
   function api() {
@@ -161,7 +165,7 @@ const Home = () => {
             <div>ID:{item.id}</div>
             <div>Title: {item.title}</div>
             <div>Completed:{item.completed ? "Yes" : "No"}</div>
-            <button onClick={cartHandler(item)}> Add to cart</button> 
+            <button onClick={CartIncrement}> Add to cart</button> 
           </li>
         ))}
       </ul>

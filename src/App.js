@@ -19,29 +19,36 @@
 
 // export default App;
 
-import React from 'react';
-import Description from './Description/Description';
-import Footer from './Footer/Footer';
-import './App.css';
-import Header from './Header/Header';
-import SideBar from './SideBar/SideBar';
-import Rout from './Routing/Routing';
+import React from "react";
+import Description from "./Description/Description";
+import Footer from "./Footer/Footer";
+import "./App.css";
+import Header from "./Header/Header";
+import SideBar from "./SideBar/SideBar";
+import Rout from "./Routing/Routing";
+import CartProvider from "./CartContext";
 
 const App = () => {
   return (
     <>
-    
-      <div class="header"><Header /></div>
-      <div style={{ display: 'flex' }}>
-        {/* <div className='main-body'> */}
-        <div className="sideBar"><SideBar /></div>
-        <div className='main-content'>
-          <div><Rout /></div>
-          <div class="footer"><Footer /></div>
-        </div>
-      {/* </div> */}
+      <div class="header">
+        <Header />
       </div>
-      
+      <div style={{ display: "flex" }}>
+        {/* <div className='main-body'> */}
+        <div className="sideBar">
+          <SideBar />
+        </div>
+        <div className="main-content">
+          <div>
+            <Rout />
+          </div>
+          <div class="footer">
+            <Footer />
+          </div>
+        </div>
+        {/* </div> */}
+      </div>
     </>
   );
 };

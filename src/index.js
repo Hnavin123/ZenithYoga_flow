@@ -1,16 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React, { createContext } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router";
+export const CartContext = createContext();
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-            <BrowserRouter>
-              <App />
-            </BrowserRouter>
+    <BrowserRouter>
+      <CartContext.Provider value={3}>
+        <App />
+      </CartContext.Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState, useEffect } from "react";
 
 import { FaShoppingCart } from "react-icons/fa";
 import "./CartButton.css";
+import { CartContext } from "../..";
 
 // const Increment = () => {
 //   if (value < 15) {
@@ -16,6 +17,7 @@ import "./CartButton.css";
 // }
 
 const CartButton = () => {
+  const theme = useContext(CartContext);
   // const[data,setData] = useState([]);
   return (
     // <button className="cart-btn ">
@@ -29,7 +31,7 @@ const CartButton = () => {
       <button className="cart-btn">
         <FaShoppingCart className="cart-icon" />
         Cart
-        {3 > 0 && <span className="cart-count">3</span>}
+        {3 > 0 && <span className="cart-count">{theme}</span>}
       </button>
     </div>
   );

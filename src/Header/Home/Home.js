@@ -1,26 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import "./Home.css"; // Import CSS for styling
 import Footer from "../../Footer/Footer";
+// import { CartContext } from ".src/CartContext"; // Import the CartContext
+import { CartContext } from "../../CartContext";
+
+
 
 const Home = () => {
-  const [value, setValue] = useState(0);
-
+  // const [value, setValue] = useState(0);
+  const { cartValue, setCartValue } = useContext(CartContext);
   const [data, setData] = useState([]);
 
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  // const [cart, setCart] = useState([]);
-
-  const [cartValue, setCartValue] = useState(0);
-
-  // function CartIncrement() {
-
-  //     setCount(count + 1);
-  // }
-
-  // function CartIncrease() {
-  //   setCount(count + 1);
-  // }
+  //const [cartValue, setCartValue] = useState(0);
 
   function api() {
     fetch("https://jsonplaceholder.typicode.com/todos")
@@ -32,16 +25,16 @@ const Home = () => {
     api();
   }, []);
 
-  const Increment = () => {
-    if (value < 15) {
-      setValue(value + 1);
-    }
-  };
-  const Decrement = () => {
-    if (value > 0) {
-      setValue(value - 1);
-    }
-  };
+  // const Increment = () => {
+  //   if (value < 15) {
+  //     setValue(value + 1);
+  //   }
+  // };
+  // const Decrement = () => {
+  //   if (value > 0) {
+  //     setValue(value - 1);
+  //   }
+  // };
 
   const CartIncrease = () => {
     setCartValue(cartValue + 1);
@@ -49,10 +42,10 @@ const Home = () => {
 
   return (
     <div className="description-container">
-      <button onClick={Increment}>+</button>
-      <button onClick={Decrement}>-</button>
+      {/* <button onClick={Increment}>+</button>
+      <button onClick={Decrement}>-</button> */}
 
-      <button>{value}</button>
+      {/* <button>{value}</button> */}
 
       <button>{cartValue}</button>
 

@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// function Cart() {
-//   return (
-//     <div>Cart</div>
-//   )
-// }
-
-// export default Cart
-
-// src/components/CartButton.js
 
 import React, { useState } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
@@ -21,7 +10,7 @@ const CartButton = () => {
     <div className="cart-container">
       <button className="cart-btn">
         <FaShoppingCart className="cart-icon" />
-        {3 > 0 && <span className="cart-count">{3}</span>}
+        {3 > 0 && <span className="cart-count">{4}</span>}
       </button>
     </div>
   );

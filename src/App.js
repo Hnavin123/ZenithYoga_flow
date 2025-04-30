@@ -19,6 +19,49 @@
 
 // export default App;
 
+// import React from "react";
+// import Description from "./Description/Description";
+// import Footer from "./Footer/Footer";
+// import "./App.css";
+// import Header from "./Header/Header";
+// import SideBar from "./SideBar/SideBar";
+// import Rout from "./Routing/Routing";
+// // import CartProvider from "./CartContext";
+// import { CartProvider } from "./CartContext"; // ✅ Correct
+
+
+// const App = () => {
+//   return (
+//     <>
+//       <div className="header">
+//         <Header />
+//       </div>
+//       <div style={{ display: "flex" }}>
+//         {/* <div className='main-body'> */}
+//         <div className="sideBar">
+//           <SideBar />
+//         </div>
+//         <div className="main-content">
+//           <div>
+//             <Rout />
+//           </div>
+//           <div className="footer">
+//             <Footer />
+//           </div>
+//         </div>
+//         {/* </div> */}
+//       </div>
+//     </>
+//   );
+// };
+
+// export default App;
+
+
+
+
+
+
 import React from "react";
 import Description from "./Description/Description";
 import Footer from "./Footer/Footer";
@@ -26,16 +69,15 @@ import "./App.css";
 import Header from "./Header/Header";
 import SideBar from "./SideBar/SideBar";
 import Rout from "./Routing/Routing";
-import CartProvider from "./CartContext";
+import { CartProvider } from "./CartContext"; // ✅ Correct
 
 const App = () => {
   return (
-    <>
-      <div class="header">
+    <CartProvider>
+      <div className="header">
         <Header />
       </div>
       <div style={{ display: "flex" }}>
-        {/* <div className='main-body'> */}
         <div className="sideBar">
           <SideBar />
         </div>
@@ -43,13 +85,12 @@ const App = () => {
           <div>
             <Rout />
           </div>
-          <div class="footer">
+          <div className="footer">
             <Footer />
           </div>
         </div>
-        {/* </div> */}
       </div>
-    </>
+    </CartProvider>
   );
 };
 

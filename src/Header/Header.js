@@ -22,7 +22,8 @@ const addmissionHandler = () => {
           <li><Link to="classes">Classes</Link></li>
           <li><Link to="membership">Membership</Link></li>
           <li><Link to="contact">Contact</Link></li>
-          <li><Link to="cart"><CartButton/></Link></li>
+          {/* <li><Link to="cart">CartButton</Link></li> */}
+          <li><CartButton /></li>
         </ul>
         <button className="join-btn" onClick={addmissionHandler}>Join Now</button>
       </nav>

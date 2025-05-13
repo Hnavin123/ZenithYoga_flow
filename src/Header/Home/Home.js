@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import "./Home.css"; // Import CSS for styling
+import axios from "axios"; // Import axios for API calls
 import Footer from "../../Footer/Footer";
 // import { CartContext } from ".src/CartContext"; // Import the CartContext
 import { CartContext } from "../../CartContext";
@@ -7,34 +8,33 @@ import { CartContext } from "../../CartContext";
 
 
 const Home = () => {
-  // const [value, setValue] = useState(0);
+  
   const { cartValue, setCartValue } = useContext(CartContext);
   const [data, setData] = useState([]);
 
-  // const [count, setCount] = useState(0);
-
-  //const [cartValue, setCartValue] = useState(0);
-
-  function api() {
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then((response) => response.json())
-      .then((json) => setData(json));
-  }
+  const fetchTodos = async () => {
+    try {
+      const response = await axios.get("https://jsonplaceholder.typicode.com/todos");
+      setData(response.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
 
   useEffect(() => {
-    api();
+    fetchTodos();
   }, []);
 
-  // const Increment = () => {
-  //   if (value < 15) {
-  //     setValue(value + 1);
-  //   }
-  // };
-  // const Decrement = () => {
-  //   if (value > 0) {
-  //     setValue(value - 1);
-  //   }
-  // };
+  // function api() {
+  //   fetch("https://jsonplaceholder.typicode.com/todos")
+  //     .then((response) => response.json())
+  //     .then((json) => setData(json));
+  // }
+
+  // useEffect(() => {
+  //   api();
+  // }, []);
+
 
   const CartIncrease = () => {
     setCartValue(cartValue + 1);

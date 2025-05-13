@@ -19,6 +19,7 @@
 
 // export default App;
 
+<<<<<<< Updated upstream
 // import React from "react";
 // import Description from "./Description/Description";
 // import Footer from "./Footer/Footer";
@@ -80,6 +81,24 @@ const App = () => {
       <div style={{ display: "flex" }}>
         <div className="sideBar">
           <SideBar />
+=======
+import React from 'react';
+import Description from './Description/Description';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import Sidebar from './SIdebar/Sidebar';
+import './App.css';
+
+const App = () => {
+  return (
+    <>
+      <div className='header'><Header /></div>
+      <div style={{ display: 'flex' }}>
+        <div className='main-body'>
+        <div className="menu"><Sidebar /></div>
+        <div className='main'>
+          <Description />
+>>>>>>> Stashed changes
         </div>
         <div className="main-content">
           <div>
